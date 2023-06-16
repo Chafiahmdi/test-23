@@ -1,0 +1,270 @@
+/* ### Variable ### */ 
+// $jaune: #ffd500;
+
+/* --------------------Général-------------------- */ 
+@font-face {
+    font-family: 'milky';
+    src: url(./../font/boba_milky/Boba\ Milky.otf);
+}
+
+
+body{
+    font-family: sans-serif;
+    h1{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 3em;
+        font-family: 'milky';
+        
+    }
+    h2{
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* --------------------Header-------------------- */ 
+
+header {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: white;
+    font-size: 1.5rem;
+    padding:  0 30rem 0 30rem ;
+
+    img{
+        width: 3.4rem;
+        height: 3.4rem;
+        object-fit: contain;
+
+    }
+
+    nav{
+        width: 100%;
+        font-family: 'milky';
+
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            
+            a{
+                text-decoration: none; 
+                color: #e0211f;
+            }
+        }
+        
+    }
+}
+
+
+/* --------------------Main-------------------- */ 
+main{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color:   $jaune;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45rem;
+    height: 30rem;
+
+    .inp{
+        height: 1.5rem;
+    }
+    .champs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1ch;
+        
+        .lb{
+            grid-row: 1;
+        }
+
+    input{
+        gap: 5ch;
+        
+    }
+    }
+
+}
+.btn{
+    height: 2rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+}
+
+
+/* --------------------Footer-------------------- */ 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border: 1px solid black;
+}
+
+/* --------------------Fruits-------------------- */ 
+
+table{
+    width: 50rem;
+    border: 3px solid red;
+    // height: 20rem;
+    thead{
+        font-weight: bold;
+    }
+    tr{
+        text-align: center;
+        height: 4rem;
+
+        td{
+            vertical-align: middle;
+            border:1px solid black;
+        }
+    }
+}
+
+/* --------------------SMOOTHYS-------------------- */ 
+
+.cards{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 10rem 11rem 5rem 10rem 12rem 5rem;
+    gap: 1ch;
+   
+
+    width: 50rem;
+
+    .crd{
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+    }
+
+    .sm1{
+        grid-row: 1;
+        grid-column: 1;
+
+    }
+    .sm2{
+        grid-row: 1;
+        grid-column: 2;
+
+    }
+    .sm3{
+        grid-row:1 ;
+        grid-column: 3;
+
+    }
+    .sm4{
+        grid-row: 1;
+        grid-column:4 ;
+
+    }
+    .sm5{
+        grid-row: 4;
+        grid-column: 1;
+
+    }
+    .sm6{
+        grid-row:4 ;
+        grid-column:2 ;
+
+    }
+    .sm7{
+        grid-row:4 ;
+        grid-column: 3;
+
+    }
+    .sm8{
+        grid-row: 4;
+        grid-column: 4;
+
+    }
+
+
+    .ingredients1{
+        grid-row:2 ;
+        grid-column:1 ;
+        background-color: #d2f99a;
+        border-radius: 10px;
+        padding: 20px;
+        line-height: 1.5em;
+    }
+    .ingredients2{
+        grid-row:2 ;
+        grid-column:2 ;
+        background-color: #ffcece;
+        border-radius: 10px;
+        padding: 20px;
+        line-height: 1.5em;
+    }
+    .ingredients3{
+        grid-row:2 ;
+        grid-column:3 ;
+        background-color: #dbd3f0;
+        border-radius: 10px;
+        padding: 20px;
+        line-height: 1.5em;
+    }
+    .ingredients4{
+        grid-row:2 ;
+        grid-column:4 ;
+        background-color:#ffe993 ;
+        border-radius: 10px;
+        padding: 20px;
+        line-height: 1.5em;
+    }
+    .ingredients5{
+        grid-row:5 ;
+        grid-column:1 ;
+        background-color: #ffcece;
+        border-radius: 10px;
+        padding: 20px;
+        line-height: 1.5em;
+    }
+    .ingredients6{
+        grid-row:5 ;
+        grid-column:2 ;
+        background-color: #dbd3f0;
+        border-radius: 10px;
+        padding: 20px;
+        line-height: 1.5em;
+    }
+    .ingredients7{
+        grid-row:5 ;
+        grid-column:3 ;
+        background-color: #d2f99a;
+        border-radius: 10px;
+        padding: 20px;
+        line-height: 1.5em;
+    }
+    .ingredients8{
+        grid-row:5 ;
+        grid-column:4 ;
+        background-color: #ffcece;
+        border-radius: 10px;
+        padding: 20px;
+        line-height: 1.5em;
+    }
+
+    .test{
+        width: 100rem;
+        height: 50rem;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1009%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(245%2c 242%2c 230%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c163 C 72%2c147.2 216%2c85.8 360%2c84 C 504%2c82.2 576%2c152.4 720%2c154 C 864%2c155.6 936%2c90.6 1080%2c92 C 1224%2c93.4 1368%2c147.2 1440%2c161L1440 560L0 560z' fill='rgba(255%2c 213%2c 0%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c488 C 96%2c452.8 288%2c304.8 480%2c312 C 672%2c319.2 768%2c511.4 960%2c524 C 1152%2c536.6 1344%2c404.8 1440%2c375L1440 560L0 560z' fill='rgba(243%2c 222%2c 119%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1009'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    }
+
+
+
+}
